@@ -7,13 +7,15 @@
 //
 
 #import "YYAppDelegate.h"
+#import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
 
 @implementation YYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    return YES;
+    [GeneratedPluginRegistrant registerWithRegistry:self];
+    return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

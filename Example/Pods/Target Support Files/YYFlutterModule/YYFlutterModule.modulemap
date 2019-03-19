@@ -1,0 +1,6 @@
+framework module YYFlutterModule {
+  umbrella header "YYFlutterModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -11,3 +11,6 @@ target 'YYFlutterModule_Example' do
     
   end
 end
+
+flutter_application_path = '../flutter_module'
+eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)

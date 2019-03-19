@@ -27,3 +27,20 @@ pod 'YYFlutterModule'
 ## License
 
 YYFlutterModule is available under the MIT license. See the LICENSE file for more info.
+
+## 注意事项
+
+- `Flutter 1.2.2-pre.21` 环境
+- `clone` 工程后，在根目录下执行
+
+```ruby
+flutter create -t module flutter_module
+```
+
+- 在 `Example` 工程目录下执行
+
+```ruby
+pod update
+```
+
+- 打开 `YYFlutterSDK.xcworkspace` 工程编译查看运行效果

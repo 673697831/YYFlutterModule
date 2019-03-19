@@ -407,12 +407,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YYFlutterModule_Example/Pods-YYFlutterModule_Example-frameworks.sh",
+				"${PODS_ROOT}/../../flutter_module/.ios/Flutter/engine/Flutter.framework",
+				"${BUILT_PRODUCTS_DIR}/FlutterPluginRegistrant/FlutterPluginRegistrant.framework",
+				"${PODS_ROOT}/../../YYFlutterModule/Library/App.framework",
 				"${BUILT_PRODUCTS_DIR}/YYFlutterModule/YYFlutterModule.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlutterPluginRegistrant.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/App.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYFlutterModule.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
