@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'YYFlutterModule/Classes/**/*'
+  #s.source_files = 'YYFlutterModule/Classes/**/*'
   
   # s.resource_bundles = {
   #   'YYFlutterModule' => ['YYFlutterModule/Assets/*.png']
