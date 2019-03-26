@@ -60,12 +60,12 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		669086DB76B7F6AB92C34CC4 /* Pods-YYFlutterModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYFlutterModule_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYFlutterModule_Tests/Pods-YYFlutterModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		68E4E0DC38F3BCEEC677FAF5 /* YYFlutterModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YYFlutterModule.podspec; path = ../YYFlutterModule.podspec; sourceTree = "<group>"; };
+		68E4E0DC38F3BCEEC677FAF5 /* YYFlutterModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YYFlutterModule.podspec; path = ../YYFlutterModule.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4D5D21E0578DCCF43B22A0F /* Pods_YYFlutterModule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYFlutterModule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A52095B61263E99FDE4CC27A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		BD4234043DDA31B265837F24 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A52095B61263E99FDE4CC27A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BD4234043DDA31B265837F24 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D555BDF5C0866EBCF1FF5CB4 /* Pods-YYFlutterModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYFlutterModule_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYFlutterModule_Example/Pods-YYFlutterModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +204,7 @@
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "YYFlutterModule_Example" */;
 			buildPhases = (
 				E36E3A7588D98FDD6B7A3B10 /* [CP] Check Pods Manifest.lock */,
+				8C6B22692248BEE9008B41E5 /* ShellScript */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
@@ -316,6 +317,23 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYFlutterModule_Tests/Pods-YYFlutterModule_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8C6B22692248BEE9008B41E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n";
+		};
 		A5066AC221266ACCA4BDD7A4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,8 +427,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-YYFlutterModule_Example/Pods-YYFlutterModule_Example-frameworks.sh",
 				"${PODS_ROOT}/../../flutter_module/.ios/Flutter/engine/Flutter.framework",
 				"${BUILT_PRODUCTS_DIR}/FlutterPluginRegistrant/FlutterPluginRegistrant.framework",
-				"${PODS_ROOT}/../../YYFlutterModule/Library/App.framework",
-				"${BUILT_PRODUCTS_DIR}/YYFlutterModule/YYFlutterModule.framework",
+				"${PODS_ROOT}/../../flutter_module/.ios/Flutter/App.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -419,7 +437,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlutterPluginRegistrant.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/App.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYFlutterModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -566,6 +584,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YYFlutterModule/YYFlutterModule-Prefix.pch";
 				INFOPLIST_FILE = "YYFlutterModule/YYFlutterModule-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -581,6 +600,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YYFlutterModule/YYFlutterModule-Prefix.pch";
 				INFOPLIST_FILE = "YYFlutterModule/YYFlutterModule-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

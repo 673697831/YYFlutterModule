@@ -18,8 +18,7 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "YYFlutterModule/Classes/**/*",
   "ios": {
-    "vendored_frameworks": "YYFlutterModule/Library/App.framework"
+    "vendored_frameworks": "flutter_module/.ios/Flutter/App.framework"
   }
 }

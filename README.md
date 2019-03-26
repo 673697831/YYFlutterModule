@@ -35,7 +35,7 @@ YYFlutterModule is available under the MIT license. See the LICENSE file for mor
 
 ```ruby
 flutter create -t module flutter_module
-cd flutter_module
-cd .ios
-open Runner.xcworkspace
+cd Example
+pod update
+open YYFlutterModule.xcworkspace
 ```

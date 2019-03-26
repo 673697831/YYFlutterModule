@@ -3,11 +3,13 @@ PODS:
   - FlutterPluginRegistrant (0.0.1):
     - Flutter
   - YYFlutterModule (0.1.0)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - Flutter (from `../flutter_module/.ios/Flutter/engine`)
   - FlutterPluginRegistrant (from `../flutter_module/.ios/Flutter/FlutterPluginRegistrant`)
   - YYFlutterModule (from `../`)
+  - YYModel
 
 EXTERNAL SOURCES:
   Flutter:
@@ -20,8 +22,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
   FlutterPluginRegistrant: 5f33f54e5f25444620ff39f2bdee4262d673ec7b
-  YYFlutterModule: f0822abe315526a25b6b90669eca541cd7ae01a0
+  YYFlutterModule: 00158b3868236041b39dbc87b65e813bab57b9bc
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: fac469344572dc91cf8da59819fdc1608f62459e
+PODFILE CHECKSUM: 5394d5f4497c2502360372727f9f6c3be01932ac
 
 COCOAPODS: 1.4.0

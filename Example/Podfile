@@ -4,6 +4,7 @@ platform :ios, '8.0'
 
 target 'YYFlutterModule_Example' do
   pod 'YYFlutterModule', :path => '../'
+  pod 'YYModel'
 
   target 'YYFlutterModule_Tests' do
     inherit! :search_paths
