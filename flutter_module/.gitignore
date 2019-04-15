@@ -39,3 +39,8 @@ build/
 .android/
 .ios/
 .flutter-plugins
+.gitmodules
+.vscode*
+
+/product/
+build.sh

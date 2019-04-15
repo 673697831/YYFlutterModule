@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://git.yy.com/opensource/ios_team/Spec.git'
+source 'https://git.yy.com/ci_team/Specs.git'
+source 'https://git.yy.com/midwares/modular/athservicespecs-ios.git'
+
+target 'Runner' do
+  flutter_application_path = '../'
+  eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)
+end
