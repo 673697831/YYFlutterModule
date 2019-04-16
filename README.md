@@ -67,7 +67,7 @@ curl -O https://raw.githubusercontent.com/zakiso/flutterw/master/flutterw && chm
 ## 编译过程中如果出现问题
 
 - `cocoapods` 版本使用 `1.5.3`
-- 仅保留 `.git`、 `.gitignore`、 `flutter_wrapper.properties` 、 `flutterw`、 `lib`、 `pubspec.yaml`、 `flutterw`、 `supportFiles` , 删除其他文件再编译
+- 仅保留 `.git`、 `.gitignore`、 `flutter_wrapper.properties` 、 `flutterw`、 `lib`、 `images`、 `pubspec.yaml`、 `flutterw`、 `supportFiles` , 删除其他文件再编译
 
 ## 未解决问题
 

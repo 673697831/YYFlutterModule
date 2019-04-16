@@ -1,6 +1,0 @@
-framework module Pods_YYFlutterModule_Example {
-  umbrella header "Pods-YYFlutterModule_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}
