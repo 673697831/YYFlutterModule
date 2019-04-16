@@ -13,16 +13,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-YYFlutterModule is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'YYFlutterModule'
-```
+放到与工程目录下同一级别，构建完后跑 `runner` 看效果
 
 ## Author
 
-673697831, ouzhirui@yy.com
+ozr, ouzhirui@yy.com
 
 ## License
 
