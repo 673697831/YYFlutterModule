@@ -16,8 +16,7 @@ function check_flutter() {
 
 function build_ios() {
     packages_get
-    cp -rf ./supportFiles/Podfile  .ios/
-    cp -rf ./supportFiles/podhelper.rb .ios/Flutter/
+    copy_supportFiles
     ./flutterw "$@"
     collect_ios_product "$@"
 }
@@ -33,6 +32,20 @@ function packages_get() {
     fi
 
     echo "Finish get flutter app plugin"
+}
+
+function copy_supportFiles() {
+    echo "Start copy supportFiles"
+    while read -r line
+    do
+        if [[ ! "$line" =~ ^// && ! "$line" =~ ^# ]];
+        then
+            cp -rf ./supportFiles/Podfile  .ios/
+            break
+        fi
+    done < $flutter_plugins
+
+    cp -rf ./supportFiles/podhelper.rb .ios/Flutter/
 }
 
 #收集iOS编译产物

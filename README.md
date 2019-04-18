@@ -15,6 +15,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 放到与工程目录下同一级别，构建完后跑 `runner` 看效果
 
+```ruby
+./flutterw.sh build ios --release --no-codesign
+```
+
 ## Author
 
 ozr, ouzhirui@yy.com
@@ -64,6 +68,8 @@ curl -O https://raw.githubusercontent.com/zakiso/flutterw/master/flutterw && chm
 - `cocoapods` 版本使用 `1.5.3`
 - 仅保留 `.git`、 `.gitignore`、 `flutter_wrapper.properties` 、 `flutterw`、 `lib`、 `images`、 `pubspec.yaml`、 `flutterw`、 `supportFiles` , 删除其他文件再编译
 
-## 未解决问题
+## 接下来要做的事情
 
-- 使用脚本 `./flutterw.sh build ios --release --no-codesign` 无法编译成功
+- 远程依赖集成
+
+* YYFlutterSDK 的制作
