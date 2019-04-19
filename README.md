@@ -63,6 +63,19 @@ curl -O https://raw.githubusercontent.com/zakiso/flutterw/master/flutterw && chm
 ./flutterw.sh build ios --release --no-codesign
 ```
 
+- 如果使用 IDE 编写程序，如 VSCode，需要把 SDK 设置改为 `flutter_wrapper` 目录下的 `flutter` ，VSCode 的设置如下 `Preferences` -> `Settings` -> 搜索 `flutterpath`
+
+## 热重载
+
+- 在工程目录下, 启动调试 （7D5DA769-4B93-4E32-87CB-4891501D2DA1 是你的 iOS 设备）
+
+```ruby
+./flutterw.sh attach -d 7D5DA769-4B93-4E32-87CB-4891501D2DA1
+```
+
+- 打开 yymoblie 项目工程，编译并运行，进入 `flutter` 页面
+- 修改 dart 文件，在刚才的启动的命令行输入 `r` 或 `R` 就能更新
+
 ## 编译过程中如果出现问题
 
 - `cocoapods` 版本使用 `1.5.3`

@@ -16,7 +16,7 @@ function check_flutter() {
 
 function build_ios() {
     packages_get
-    copy_supportFiles
+    copy_supportFiles "$@"
     ./flutterw "$@"
     collect_ios_product "$@"
 }
@@ -36,14 +36,21 @@ function packages_get() {
 
 function copy_supportFiles() {
     echo "Start copy supportFiles"
-    while read -r line
-    do
-        if [[ ! "$line" =~ ^// && ! "$line" =~ ^# ]];
-        then
-            cp -rf ./supportFiles/Podfile  .ios/
-            break
-        fi
-    done < $flutter_plugins
+    local basePath=$(cd `dirname $0`; pwd)
+    if [ -f "${basePath}/.flutter-plugins" ];
+    then
+        local flutter_plugins="${basePath}/.flutter-plugins"
+        while read -r line
+        do
+            if [[ ! "$line" =~ ^// && ! "$line" =~ ^# ]];
+            then
+                cp -rf ./supportFiles/Podfile  .ios/
+                break
+            fi
+        done < $flutter_plugins
+    else
+        echo "无第三方插件，无需复制Podfile"
+    fi
 
     cp -rf ./supportFiles/podhelper.rb .ios/Flutter/
 }
