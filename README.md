@@ -15,6 +15,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 放到与工程目录下同一级别，构建完后跑 `runner` 看效果
 
+```ruby
+./flutterw.sh build ios --release --no-codesign
+```
+
 ## Author
 
 ozr, ouzhirui@yy.com
@@ -59,11 +63,26 @@ curl -O https://raw.githubusercontent.com/zakiso/flutterw/master/flutterw && chm
 ./flutterw.sh build ios --release --no-codesign
 ```
 
+- 如果使用 IDE 编写程序，如 VSCode，需要把 SDK 设置改为 `flutter_wrapper` 目录下的 `flutter` ，VSCode 的设置如下 `Preferences` -> `Settings` -> 搜索 `flutterpath`
+
+## 热重载
+
+- 在工程目录下, 启动调试 （7D5DA769-4B93-4E32-87CB-4891501D2DA1 是你的 iOS 设备）
+
+```ruby
+./flutterw.sh attach -d 7D5DA769-4B93-4E32-87CB-4891501D2DA1
+```
+
+- 打开 yymoblie 项目工程，编译并运行，进入 `flutter` 页面
+- 修改 dart 文件，在刚才的启动的命令行输入 `r` 或 `R` 就能更新
+
 ## 编译过程中如果出现问题
 
 - `cocoapods` 版本使用 `1.5.3`
 - 仅保留 `.git`、 `.gitignore`、 `flutter_wrapper.properties` 、 `flutterw`、 `lib`、 `images`、 `pubspec.yaml`、 `flutterw`、 `supportFiles` , 删除其他文件再编译
 
-## 未解决问题
+## 接下来要做的事情
 
-- 使用脚本 `./flutterw.sh build ios --release --no-codesign` 无法编译成功
+- 远程依赖集成
+
+* YYFlutterSDK 的制作
