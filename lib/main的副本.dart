@@ -154,16 +154,16 @@ class _MyHomePageState extends State<MyHomePage> {
     ];
 
     var imageList = [
-      'images/mlive_setting_item_clearWindow.png',
-      'images/mlive_setting_item_hd.png',
-      'images/mlive_setting_item_report.png',
-      'images/mlive_setting_item_manage.png',
-      'images/mlive_setting_item_plugin.png',
-      'images/mlive_setting_item_manage.png',
-      'images/mlive_setting_item_audio.png',
-      'images/mlive_setting_item_subchannel.png',
-      'images/mlive_setting_item_whisper.png',
-      'images/mlive_setting_item_minimize.png'
+      'assets/images/mlive_setting_item_clearWindow.png',
+      'assets/images/mlive_setting_item_hd.png',
+      'assets/images/mlive_setting_item_report.png',
+      'assets/images/mlive_setting_item_manage.png',
+      'assets/images/mlive_setting_item_plugin.png',
+      'assets/images/mlive_setting_item_manage.png',
+      'assets/images/mlive_setting_item_audio.png',
+      'assets/images/mlive_setting_item_subchannel.png',
+      'assets/images/mlive_setting_item_whisper.png',
+      'assets/images/mlive_setting_item_minimize.png'
     ];
 
     var funList = [
