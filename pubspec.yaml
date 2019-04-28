@@ -50,21 +50,7 @@ flutter:
   # To add Flutter specific assets to your application, add an assets section,
   # like this:
   assets:
-    - images/ic_assignment_ind_36pt.png
-    - images/mlive_setting_item_clearWindow.png
-    - images/mlive_setting_item_audio.png
-    - images/mlive_setting_item_bd.png
-    - images/mlive_setting_item_feedback.png
-    - images/mlive_setting_item_fhd.png
-    - images/mlive_setting_item_hd.png
-    - images/mlive_setting_item_manage.png
-    - images/mlive_setting_item_minimize.png
-    - images/mlive_setting_item_plugin.png
-    - images/mlive_setting_item_report.png
-    - images/mlive_setting_item_sd.png
-    - images/mlive_setting_item_subchannel.png
-    - images/mlive_setting_item_video.png
-    - images/mlive_setting_item_whisper.png
+  - assets/images/
 
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
