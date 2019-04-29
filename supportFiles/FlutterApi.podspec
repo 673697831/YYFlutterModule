@@ -3,16 +3,16 @@ Pod::Spec.new do |s|
   s.name         = "FlutterApi"
   s.version      = "0.0.4"
   s.summary      = "A short description of flutterApi."
-  s.homepage     = "http://flutterApi"
+  s.homepage     = "https://github.com/673697831/YYFlutterModule"
   s.platform     = :ios, "9.0"
   s.license         = { type: 'MIT', file: 'LICENSE' }
-  s.author       = { "luph" => "luph@yy.com" }
+  s.author       = { "ouzhirui" => "ouzhirui@yy.com" }
 
-  s.source       = { :path => "~/Documents/luph/testPro/flutter_module/outProduct/ios" } 
+  s.source       = { :git => 'https://github.com/673697831/YYFlutterModule.git' } 
 
-  s.source_files  = "flutter", "flutter/FlutterPluginRegistrant/**/*.{h,m,mm}" ,"plugins/**/*.{h,m,mm}" 
+  s.source_files  = "outProduct/ios/flutter/FlutterPluginRegistrant/**/*.{h,m,mm}" ,"outProduct/ios/plugins/**/*.{h,m,mm}" 
 
-  s.vendored_frameworks = 'flutter/*.framework'
+  s.vendored_frameworks = 'outProduct/ios/flutter/*.framework'
 
 #  s.resources = 'flutter/flutter_assets'
 #  s.vendored_libraries = 'Plugin/**/*.{a}'

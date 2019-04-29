@@ -149,7 +149,8 @@ function collect_ios_product() {
 
     local podspecfile=`cat $supportPodSpec`
     local podfinl=${podspecfile//<dependency>/$dependencyText}
-    echo "$podfinl" > "${product_dir}/FlutterApi.podspec"
+    #echo "$podfinl" > "${product_dir}/FlutterApi.podspec"
+    echo "$podfinl" > "${basePath}/FlutterApi.podspec"
 } 
 
 
