@@ -81,8 +81,22 @@ curl -O https://raw.githubusercontent.com/zakiso/flutterw/master/flutterw && chm
 - `cocoapods` 版本使用 `1.5.3`
 - 仅保留 `.git`、 `.gitignore`、 `flutter_wrapper.properties` 、 `flutterw`、 `lib`、 `images`、 `pubspec.yaml`、 `flutterw`、 `supportFiles` , 删除其他文件再编译
 
+## SDK 支持
+
+如果要构建外发 `Release` 包，即只有真机架构而且不能调试的集成产物
+
+```ruby
+./flutterw.sh build ios --release --no-codesign
+```
+
+如果要构建外发 `Debug` 包， 即包含模拟器架构且可以热重载调试
+
+```ruby
+./flutterw.sh build ios --debug --simulator --no-codesign
+```
+
 ## 接下来要做的事情
 
-- 远程依赖集成
+- 混编断点调试调研
 
-* YYFlutterSDK 的制作
+- `Flutter` 私有插件制作
