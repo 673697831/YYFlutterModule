@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FlutterApi"
-  s.version      = "0.1.0-dev"
+  s.version      = "0.1.0"
   s.summary      = "A short description of flutterApi."
   s.homepage     = "https://github.com/673697831/YYFlutterModule"
   s.platform     = :ios, "9.0"
