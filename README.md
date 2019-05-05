@@ -76,6 +76,55 @@ curl -O https://raw.githubusercontent.com/zakiso/flutterw/master/flutterw && chm
 - 打开 yymoblie 项目工程，编译并运行，进入 `flutter` 页面
 - 修改 dart 文件，在刚才的启动的命令行输入 `r` 或 `R` 就能更新
 
+## 混编断点调试
+
+### vscode
+
+<img src="https://github.com/673697831/YYFlutterModule/blob/master/document/add_configurations_5.png?raw=true" alt="419 * 596" 
+  align=center>
+
+- 添加配置 `Debug -> Add Configuration`
+
+  <img src="https://github.com/673697831/YYFlutterModule/blob/master/document/add_configurations_0.png?raw=true" alt="719 * 400" 
+  align=center>
+
+* 选择设备
+
+  <img src="https://github.com/673697831/YYFlutterModule/blob/master/document/add_configurations_4.png?raw=true" alt="891 * 129"
+  align=center>
+
+- 开始连接模拟器 `Debug -> Start Debugging`
+- 寻找 iOS 设备上 `Observatory` 端口, 以下是启动 `xcode` `Debug` 模式下查看得到
+
+  <img src="https://github.com/673697831/YYFlutterModule/blob/master/document/add_configurations_1.png?raw=true" alt="603 * 76" 
+  align=center>
+
+* 在 `Configuration` 中添加端口号 `port`
+
+  <img src="https://github.com/673697831/YYFlutterModule/blob/master/document/add_configurations_2.png?raw=true" alt="769 * 326" 
+  align=center>
+
+* 重新加载文件 `hot reload`
+
+  <img src="https://github.com/673697831/YYFlutterModule/blob/master/document/add_configurations_3.png?raw=true" alt="621 * 348" 
+  align=center>
+
+* vscode 目前不支持更多的调试栏按钮, 没有 `hot restart`, 你需要绑定一个快捷键, 编辑 `keybindings`， `Code -> Preferences -> Keyboard Shortcuts`
+
+### Android Studio
+
+- Google 官方 IDE 更为牛逼，安装 `Flutter` 插件, 打开 `Flutter` 工程
+- 添加 `Configuration`， `Run -> Edit Configurations -> + Dart Remote Debug -> 修改Port`
+- 看到 `Connented` 提示即可
+
+  <img src="https://github.com/673697831/YYFlutterModule/blob/master/document/Dart%20Remote%20Debug%201.png?raw=true" alt="947 * 630" 
+  align=center>
+
+  <img src="https://github.com/673697831/YYFlutterModule/blob/master/document/Dart%20Remote%20Debug%202.png?raw=true" alt="968 * 651" 
+  align=center>
+
+* 参考文档 https://juejin.im/entry/5b69272051882569fd2893da
+
 ## 编译过程中如果出现问题
 
 - `cocoapods` 版本使用 `1.5.3`
@@ -97,6 +146,6 @@ curl -O https://raw.githubusercontent.com/zakiso/flutterw/master/flutterw && chm
 
 ## 接下来要做的事情
 
-- 混编断点调试调研
+- `post_install` podfile 中多个钩子冲突问题
 
-- `Flutter` 私有插件制作
+- `Flutter` 私有插件制作 (模拟 `flutter_boost` 做一套属于自己的)
